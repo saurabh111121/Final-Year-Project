@@ -2,7 +2,7 @@
  social networking website for college
  @in progress.....
  
- completed :-> 
+ completed files :-> 
  
  ?? database
  
