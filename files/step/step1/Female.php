@@ -1,23 +1,23 @@
 <?php
-session_start();
-error_reporting(1);
-if(isset($_SESSION['temp_user']))
-{
-    mysql_connect("localhost","root","");
-    mysql_select_db("saurabh");
-    $user=$_SESSION['temp_user'];
-    $que1=mysql_query("select * from users where Email='$user' ");
-    $rec=mysql_fetch_array($que1);
-    $userid=$rec[0];
-    $gender=$rec[4];
-    if($gender=="Female")
-    {
-        $que2=mysql_query("select * from user_profile_pic where user_id=$userid");
-        $count1=mysql_num_rows($que2);
-        if($count1==0)
-        {
-            
-            ?>
+	session_start();
+	error_reporting(1);
+	if(isset($_SESSION['temp_user']))
+	{
+		mysql_connect("localhost","root","");
+		mysql_select_db("saurabh");
+		$user=$_SESSION['temp_user'];
+		$que1=mysql_query("select * from users where Email='$user' ");
+		$rec=mysql_fetch_array($que1);
+		$userid=$rec[0];
+		$gender=$rec[4];
+		if($gender=="Female")
+		{
+			$que2=mysql_query("select * from user_profile_pic where user_id=$userid");
+			$count1=mysql_num_rows($que2);
+			if($count1==0)
+			{
+		
+?>
 <?php
 
 	if(isset($_POST['file']) && ($_POST['file']=='Upload'))
@@ -88,7 +88,7 @@ if(isset($_SESSION['temp_user']))
 		}
 		else
 		{
-			header("location:../step1/Male.php");
+			header("location:../step1/Step1_Male.php");
 		}
 	}
 	else

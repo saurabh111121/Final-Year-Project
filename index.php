@@ -7,7 +7,7 @@
 <?php 
     include("files/index_files/SignUp.php");
     include("files/index_files/Login.php");   
-    //include("files/index_files/Background.php");
+    include("files/index_files/Background.php");
     include("files/index_files/Error.php");
     //<link href="" rel="stylesheet" type="text/css">
     //<link href="" rel="stylesheet" type="text/css">
@@ -19,18 +19,23 @@
 
 <form method="post">
 	<form method="post">
-		<div style="position:absolute;left:50%; top:1%; color:#000066; font-size:25"> <h5> Login In</h5> </div>
-		<div style="position:absolute; left:57.7%; top:2.2%; font-size:12px; color:#FFFFFF;">   Email </div> 
-		<div style="position:absolute; left:57.7%; top:5.18%; font-size:11px; "> <input type="text" name="username" style="width:149.5;"/> </div>
-		<div style="position:absolute; left:57.4%; top:8.8%; font-size:12; color:#CCCCCC;"> 
+		<div style="position:absolute;left:25%; top:14.5%; color:#000066; font-size:25"> <h5> Login In</h5> </div>
+		<div style="position:absolute;left:25%; top:24.6%; color:#000000;"> Login to continue....... </div>
+		<div style="position:absolute;left:20%; top:29.1%; height:1; width:385; background-color:#CCCCCC;"> </div>
+		<div style="position:absolute; left:25%; top:34%; font-size:16px; color:#000066;">   Email </div> 
+		<div style="position:absolute; left:30%; top:34%; font-size:11px; "> <input type="text" name="username" style="width:149.5;"/> </div>
+		<div style="position:absolute; left:28%; top:45%; font-size:12; color:#000066;"> 
 
-		<input type="checkbox" checked="checked">   Keep me logged in </div>
-		<div style="position:absolute;left:69.6%; top:2.2%; font-size:13px; color:#FFFFFF"> Password </div>
-		<div style="position:absolute;left:69.6%; top:5.18%; font-size:13px; "> <input type="password" name="password" style="width:149.5;"> </div>
-		<div style="position:absolute;left:69.6%; top:9.2%; font-size:12px; color:#CCCCCC;"> <a href="Forgot_Password.php" style="color:#CCCCCC; text-decoration:none;"> Forgot your password? </a> </div>   
-		<div style="position:absolute;left:81.8%;top:5.2%; ">   <input type="submit" name="Login" value="Log In" id="login_button" />  </div>
+		<input type="checkbox" checked="">   Keep me logged in </div>
+		<div style="position:absolute;left:25%; top:41%; font-size:16px; color:#000066"> Password </div>
+		<div style="position:absolute;left:30%; top:41%; font-size:13px; "> <input type="password" name="password" style="width:149.5;"> </div>
+		<div style="position:absolute;left:29%; top:49%; font-size:12px; color:#000066;"> <a href="Forgot_Password.php" style="color:#000066; text-decoration:none;"> Forgot your password? </a> </div>   
+		<div style="position:absolute;left:33%;top:53%; ">   <input type="submit" name="Login" value="Log In" id="login_button" />  </div>
 	</form>
+         
+	<div style="position:absolute;left:50%;  top:20%; bottom:20%; height:450; width:1; background-color:#CCCCCC;"> </div>
 
+		  
 		<!-- Registration -->
 	<form  method="post" onSubmit="return check();" name="Reg">
 		<div style="position:absolute;left:58%; top:14.5%; color:#000066; font-size:25"> <h5> Sign Up </h5> </div>
@@ -38,7 +43,7 @@
 		<div style="position:absolute;left:57.3%; top:29.1%; height:1; width:385; background-color:#CCCCCC;"> </div>
         
 		<div style="position:absolute;left:59.4%; top:34%; font-size:16px; color:#000000">  First Name: </div>
-		<div style="position:absolute;left:65.2%;   top:32.8%; "> <input type="text" name="first_name" class="inputbox" maxlength="10"/> </div>
+		<div style="position:absolute;left:65.2%;   top:32.8%; "> <input type="text" name="first_name" size="25" class="inputbox" maxlength="10"/> </div>
 		<div style="position:absolute;left:59.4%; top:41%; font-size:16px; color:#000000">  Last Name: </div>
 		<div style="position:absolute;left:65.2%;  top:39.8%;  "> <input type="text" name="last_name"  size="25" class="inputbox" maxlength="10" /> </div>
 		<div style="position:absolute;left:59.2%; top:48%; font-size:16px; color:#000000">  Your Email:  </div>
@@ -104,7 +109,6 @@
 		<div style="position:absolute;left:65.2%; top:82%; ">  <input type="submit" name="signup" value="Sign Up" id="sign_button" / onClick="time_get()"> </div>
 		</form>
 		
-		<div style="position:absolute;left:57.3%; top:90%; height:1; width:385; background-color:#CCCCCC; "> </div> 
         
 </form>
 

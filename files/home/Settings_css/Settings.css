@@ -1,0 +1,44 @@
+.save_button
+{
+	font-size:14px;
+	height:30;
+	width:67;
+	padding:2;
+	background-color:; 
+	color:;
+	border-top:;
+    border-right-color:;
+	border-bottom-color:;
+	border-left-color:;
+	font-weight:bold;
+	box-shadow:0px 0px 5px 1px rgb(0,0,0);
+}
+		
+#yes_button
+{
+	font-size:14px;
+	height:30;
+	width:67;
+	padding:2;
+	background-color:; 
+	color:;
+	border-top:;
+    border-right-color:;
+	border-bottom-color:;
+	border-left-color:;
+	font-weight:bold;
+	box-shadow:0px 0px 5px 1px rgb(0,0,0);
+}
+
+#no_button
+{
+	font-size:14px;
+	height:30;
+	width:75;
+	padding:2;
+	background-color:; 
+	color:;
+	border-left-color:;
+	font-weight:bold;
+	box-shadow:0px 0px 5px 1px rgb(0,0,0);
+}

@@ -33,7 +33,7 @@
 		$user_data=mysql_fetch_array($que_user_data);
 		$userid=$user_data[0];
 		$user_join_time=$user_data[6];
-		mysql_query("insert into user_post(user_id,post_txt,post_time,priority) values($userid,'Join Faceback','$user_join_time','Public');");
+		mysql_query("insert into user_post(user_id,post_txt,post_time,priority) values($userid,'Joined!!','$user_join_time','Public');");
 		mysql_query("insert into user_status values($userid,'Online')");
 		mysql_query("insert into user_info(user_id) values($userid)");
 		
@@ -50,7 +50,6 @@
 ?>
 	<link href="step3_css/step3.css" rel="stylesheet" type="text/css">
     <link href="../../font/font.css" rel="stylesheet" type="text/css">
-    <LINK REL="SHORTCUT ICON" HREF="../../title_icon/saurabh.ico" />
 	<script src="step3_js/que_check.js" language="javascript">
 	</script>
 </head>
@@ -82,7 +81,7 @@
 
 </form>
 
-<div style=" position:absolute; left:16%; top:42%;"> <img src="img/waiting.gif"> </div>
+
 
 <?php
 		include("step3_erorr/step3_erorr.php");

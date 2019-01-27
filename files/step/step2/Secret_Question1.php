@@ -38,7 +38,7 @@
 ?>
 	<link href="step2_css/step2.css" rel="stylesheet" type="text/css">
     <link href="../../font/font.css" rel="stylesheet" type="text/css">
-    <LINK REL="SHORTCUT ICON" HREF="../../title_icon/saurabh.ico" />
+   
 	<script src="step2_js/que_check.js" language="javascript">
 	</script>
 </head>
@@ -70,7 +70,7 @@
 
 </form>
 
-<div style=" position:absolute; left:16%; top:42%;"> <img src="img/waiting.gif"> </div>
+
 
 <?php
 		include("step2_erorr/step2_erorr.php");
@@ -83,11 +83,11 @@
 			{
 				if($gender=="Male")
 				{
-					header("location:../step1/Male.php");
+					header("location:../step1/Step1_Male.php");
 				}
 				else
 				{
-					header("location:../step1/Female.php");
+					header("location:../step1/Step1_Female.php");
 				}
 			}
 		}
@@ -100,4 +100,4 @@
 	{
 		header("location:../../../index.php");
 	}
-?>s
+?>

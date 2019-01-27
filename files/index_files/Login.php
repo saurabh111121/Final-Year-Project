@@ -42,7 +42,7 @@ if($count1>0)
             {
                 
                 session_start();
-                $_SESSION['fbuser']=$user;
+                $_SESSION['user']=$user;
                 $query1=mysql_query("select * from users where Email='$user'");
                 $rec1=mysql_fetch_array($query1);
                 $userid=$rec1[0];
