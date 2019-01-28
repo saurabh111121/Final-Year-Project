@@ -1,11 +1,11 @@
-// fb text
-function on_head_fb_text()
+// text
+function on_head_text()
 {
-	document.getElementById("head_fb_text_backgraound").style.display='block';
+	document.getElementById("head_text_backgraound").style.display='block';
 }
-function out_head_fb_text()
+function out_head_text()
 {
-	document.getElementById("head_fb_text_backgraound").style.display='none';
+	document.getElementById("head_text_backgraound").style.display='none';
 }
 
 

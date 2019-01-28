@@ -8,6 +8,6 @@ function searching()
   			var details=document.getElementById("searching_ID");
 	  		details.innerHTML=xmlhttp.responseText;
 	}
-	xmlhttp.open("GET","Search_Display.php?search_text="+document.fb_search.search1.value,true);
+	xmlhttp.open("GET","Search_Display.php?search_text="+document.search.search1.value,true);
 	xmlhttp.send(null);
 }
